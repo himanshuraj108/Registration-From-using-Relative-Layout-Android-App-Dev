@@ -10,16 +10,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.RelativeLayoutex">
+        android:theme="@style/Theme.RelativeLayoutex"
+        tools:targetApi="31">
+
+        <!-- MainActivity will open first when app launches -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
+        </activity>
+
+        <!-- Secondary activity for changing image -->
+        <activity
+            android:name=".Changeimage"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
