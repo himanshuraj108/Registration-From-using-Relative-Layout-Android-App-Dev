@@ -12,25 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RelativeLayoutex"
         tools:targetApi="31">
-
-        <!-- MainActivity will open first when app launches -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
-
-        <!-- Secondary activity for changing image -->
-        <activity
-            android:name=".Changeimage"
-            android:exported="true">
+            android:name=".Amazonclone"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- MainActivity will open first when app launches -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity> <!-- Secondary activity for changing image -->
+        <activity
+            android:name=".Changeimage"
+            android:exported="true">
 
-
+        </activity>
     </application>
 
 </manifest>
