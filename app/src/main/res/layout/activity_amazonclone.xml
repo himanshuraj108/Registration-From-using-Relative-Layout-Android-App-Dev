@@ -1,126 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
+    android:background="#F5F5F5"
     tools:context=".Amazonclone">
 
-
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center"
-        >
+        android:gravity="center_horizontal"
+        android:padding="24dp">
 
+        <!-- Amazon Logo -->
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:id="@+id/amazon_logo"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
             android:src="@drawable/amazonlogo"
-            />
+            android:contentDescription="Amazon Logo"
+            android:scaleType="fitCenter" />
 
+        <!-- Sign in Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign in or create acccount"
-            android:textSize="25dp"
+            android:text="Sign in or create account"
             android:textStyle="bold"
-            />
+            android:textColor="#111111"
+            android:textSize="24sp"
+            android:layout_marginTop="20dp" />
+
+        <!-- Subtitle -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:text="Enter mobile number and emaill"
-            />
+            android:text="Enter your mobile number or email"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Input Field -->
         <EditText
+            android:id="@+id/input_field"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#088C7C7C"
-            android:padding="12dp"
-            />
+            android:layout_height="50dp"
+            android:hint="Mobile number or email"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Continue Button -->
         <Button
+            android:id="@+id/continue_button"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:text="Continue"
-            android:textStyle="normal"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:backgroundTint="#F0DA08"
-            />
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:backgroundTint="#FFD814"
+            android:layout_marginTop="20dp"
+            android:elevation="4dp"/>
+
+        <!-- Terms and Conditions -->
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="By continuing, you agree to Amazon's Conditions of Use and Privacy Notice."
-            />
-        <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="By continuing, you agree to Amazon's Conditions of Use and Privacy Notice."
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:gravity="center" />
+
+        <!-- Work Account Section -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Buying for work?"
-            android:textSize="25dp"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"
-            />
+            android:textColor="#111111"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textSize="18dp"
-            android:textColor="#1934B3"
-            android:text="Create a freee business account"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:text="Create a free business account"
+            android:textColor="#0066C0"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp" />
 
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DADADA"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Footer Links -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            >
+            android:gravity="center"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#233BB3"
                 android:text="Conditions of Use"
-                />
+                android:textColor="#0066C0"
+                android:textSize="14sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#233BB3"
-                android:layout_marginLeft="15dp"
                 android:text="Privacy Notice"
-                />
+                android:textColor="#0066C0"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp" />
+
             <TextView
                 android:layout_width="wrap_content"
-                android:textColor="#233BB3"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
                 android:text="Help"
-                />
+                android:textColor="#0066C0"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp" />
         </LinearLayout>
+
+        <!-- Footer Text -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="© 1996-2025, Amaozon.com, Inc. or its affiliates"
-            />
+            android:text="© 1996–2025, Amazon.com, Inc. or its affiliates"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp" />
     </LinearLayout>
-
-</LinearLayout>
+</ScrollView>
