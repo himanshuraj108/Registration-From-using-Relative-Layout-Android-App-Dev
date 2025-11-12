@@ -51,7 +51,7 @@
             android:orientation="horizontal"
             >
             <Button
-                android:id="@+id/resetradio"
+                android:id="@+id/submitradio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -60,7 +60,7 @@
                 />
 
             <Button
-                android:id="@+id/submitradio"
+                android:id="@+id/resetradio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -70,5 +70,15 @@
         </LinearLayout>
 .
     </RadioGroup>
+    <TextView
+        android:id="@+id/showResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        />
 
   </LinearLayout>
