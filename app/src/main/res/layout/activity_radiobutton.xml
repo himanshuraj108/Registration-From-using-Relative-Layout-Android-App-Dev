@@ -44,14 +44,31 @@
             android:text="Mathematics"
             android:layout_marginLeft="20dp"
             />
-        <Button
-            android:id="@+id/submitradio"
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:text="Submit"
-            />
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/resetradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Submit"
+                />
+
+            <Button
+                android:id="@+id/submitradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Reset"
+                />
+        </LinearLayout>
+.
     </RadioGroup>
 
   </LinearLayout>

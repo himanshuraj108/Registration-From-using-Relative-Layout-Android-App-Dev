@@ -19,6 +19,7 @@ class Radiobutton : AppCompatActivity() {
 
         var rGrp: RadioGroup = findViewById(R.id.rGrp)
         var btn: Button = findViewById(R.id.submitradio)
+        var reset: Button = findViewById(R.id.resetradio)
 
         btn.setOnClickListener {
             var selId = rGrp.checkedRadioButtonId
@@ -28,6 +29,12 @@ class Radiobutton : AppCompatActivity() {
             }
             else{
                 Toast.makeText(applicationContext,"Option must be selected for submit", Toast.LENGTH_LONG).show()
+            }
+        }
+        reset.setOnClickListener {
+            var sellid = rGrp.checkedRadioButtonId
+            if(sellid == 1){
+                sellid == -1
             }
         }
     }
