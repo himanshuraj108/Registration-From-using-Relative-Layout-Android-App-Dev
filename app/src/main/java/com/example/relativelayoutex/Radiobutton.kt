@@ -27,12 +27,15 @@ class Radiobutton : AppCompatActivity() {
             var selId = rGrp.checkedRadioButtonId
             if(selId != -1){
                 var rBtn: RadioButton = findViewById(selId)
-                Toast.makeText(applicationContext,"Your selected option is ${rBtn.text}", Toast.LENGTH_LONG).show();
+                Toast.makeText(applicationContext,"Your selected option is ${rBtn.text}", Toast.LENGTH_LONG).show()
                 showResult.text = "Your selected preference is ${rBtn.text}"
+//                btn.isEnabled = false
             }
+
             else{
                 Toast.makeText(applicationContext,"Option must be selected for submit", Toast.LENGTH_LONG).show()
             }
+
         }
         reset.setOnClickListener {
             var sellid = rGrp.checkedRadioButtonId
@@ -40,6 +43,7 @@ class Radiobutton : AppCompatActivity() {
                 rGrp.clearCheck()
                 showResult.text = ""
             }
+
         }
     }
 }
